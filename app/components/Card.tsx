@@ -1,21 +1,11 @@
 'use client'
 import { createElement } from 'react';
 import styles from '../page.module.css'
-import Arrow from './Arrow';
 
 interface props {
-    top: {
-        type: any,
-        content: any
-    },
-    mid: {
-        type: any,
-        content: any
-    },
-    btm: {
-        type: any,
-        content: any
-    }
+    top: any,
+    mid: any,
+    btm: any
 }
 
 const Card = ({top, mid, btm}: props) => {
@@ -44,13 +34,13 @@ const Card = ({top, mid, btm}: props) => {
 
     return (
         <div className={styles.card}>
-            <div id="top">
+            <div id="top" className={styles.cont}>
                 {topEl}
             </div>
-            <div id="mid">
+            <div id="mid" className={styles.cont}>
                 {midEl}
             </div>
-            <div id="btm">
+            <div id="btm" className={styles.cont}>
                 {btmEl}
             </div>
         </div>

@@ -11,13 +11,29 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   max-width: 1400px;
+  width: 275px;
+  text-align: center;
+  font-size: 24px;
 }
 
 .rightArrow {
   position: absolute;
-  right: 2%;
-  top: 50%;
+  right: 5px;
+  top: 49%;
   cursor: pointer;
+}
+
+.leftArrow {
+  position: absolute;
+  left: 5px;
+  top: 49%;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+
+.cont {
+  width: fit-content;
+  min-height: 100px;
 }
