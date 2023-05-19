@@ -10,6 +10,25 @@ export default function Home() {
     console.log('clicked')
   }
 
+  const test = {
+    top: {
+        type: 'title',
+        content: 'Happy Anniversary Love!'
+    },
+    mid: {
+        type: 'text',
+        content: 'Just a test for now'
+    },
+    btm: {
+        type: 'pic',
+        content: 'https://www.kasandbox.org/programming-images/avatars/leaf-blue.png'
+    }
+  }
+
+  const top = test.top;
+  const mid = test.mid;
+  const btm = test.btm;
+
   return (
     <main className={styles.main}>
       <a onClick={handleClick}>
@@ -17,7 +36,7 @@ export default function Home() {
             <Arrow />
         </div>
       </a>
-      <Card />
+      <Card {...{top, mid, btm}} />
     </main>
   )
 }
